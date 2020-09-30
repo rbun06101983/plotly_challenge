@@ -83,8 +83,9 @@ function buildTable(sampleId){
         Object.entries(selectedMetadata).forEach(([meta_key, meta_value])=>{
             panel.append('h5')
                 .text(`${meta_key}: ${meta_value}`);
-
-        var wash_freq=file_path.wfreq;
+        
+        //BONUS Gauge Chart
+        var wash_freq=selectedMetadata.wfreq;
             // console.log(wash_freq);
                 
            var data=[
