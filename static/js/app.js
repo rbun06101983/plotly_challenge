@@ -1,5 +1,5 @@
 //define a variable for the path relative to app.js
-var file_path='../../samples.json'
+var file_path='samples.json'
 d3.json(file_path).then(function(data){
     console.log(data);
     dropDown(data);
